@@ -3,6 +3,3 @@ name: wordpress
 version: 0.1
 appVersion: 0.1
 description: Chart for setup of wordpress
-dependencies:
-- name: mysql
- repository: "https://charts.bitnami.com/bitnami
