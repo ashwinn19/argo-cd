@@ -18,15 +18,6 @@ spec:
       containers:
         - name: wordpress
           image: wordpress
-          env:
-            - name: WORDPRESS_DB_HOST
-              value: mysql.app.svc.cluster.local
-            - name: WORDPRESS_DB_USER
-              value: username
-            - name: WORDPRESS_DB_PASSWORD
-              value: password
-            - name: WORDPRESS_DB_NAME
-              value: wordpress_db
           ports:
             - containerPort: 80
           resources:
