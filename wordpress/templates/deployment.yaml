@@ -33,8 +33,8 @@ spec:
             - name: WORDPRESS_DB_NAME
               valueFrom:
                 secretKeyRef: 
-                  name: mysql-database
-                  key: dbname
+                  name: db-sql
+                  key: mysql-database
           ports:
             - containerPort: 80
           resources:
