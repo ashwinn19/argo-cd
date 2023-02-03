@@ -25,16 +25,16 @@ spec:
               valueFrom:
                 secretKeyRef: 
                   name: db-sql
-                  key: userid
+                  key: mysql-user
             - name: WORDPRESS_DB_PASSWORD
               valueFrom:
                 secretKeyRef: 
                   name: db-sql
-                  key: userpass
+                  key: mysql-password
             - name: WORDPRESS_DB_NAME
               valueFrom:
                 secretKeyRef: 
-                  name: db-sql
+                  name: mysql-database
                   key: dbname
           ports:
             - containerPort: 80
